@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h2>Most used JS code</h2>
+    <pre style="tab-size: 4">
+    <code class="language-javascript">
+    // Variables and Data Types
+ let myNumber = 42;
+ const myString = "Hello, World!";
+ var myVar = "Old way of declaring variables";
+
+ // Conditional Statements
+ if (myNumber === 42) {
+   console.log("It's the answer to the Ultimate Question of Life, the Universe, and Everything.");
+ } else {
+   console.log("It's not the answer.");
+ }
+
+ // Loops
+ for (let i = 0; i < 5; i++) {
+   console.log("Loop iteration: " + i);
+ }
+
+ // Arrays
+ const myArray = [1, 2, 3, 4, 5];
+
+ // Functions
+ function add(a, b) {
+   return a + b;
+ }
+
+ // Objects
+ const myObject = {
+   name: "John",
+   age: 30,
+   sayHello: function() {
+     console.log("Hello, " + this.name);
+   }
+ };
+
+ // Classes (ES6)
+ class Person {
+   constructor(name, age) {
+     this.name = name;
+     this.age = age;
+   }
+
+   sayHello() {
+     console.log("Hello, " + this.name);
+   }
+ }
+
+ // Promises (Async/Await)
+ async function fetchData() {
+   try {
+     const response = await fetch('https://api.example.com/data');
+     const data = await response.json();
+     console.log(data);
+   } catch (error) {
+     console.error(error);
+   }
+ }
+
+ // Modules (ES6)
+ import {
+   myFunction
+ } from './myModule.js';
+
+ // Event Handling
+ document.getElementById("myButton").addEventListener("click", function() {
+   console.log("Button clicked!");
+ });
+
+ // Try-Catch for Error Handling
+ try {
+   // Code that might throw an error
+ } catch (error) {
+   console.error(error);
+ }
+
+ // Callbacks
+ function doSomething(callback) {
+   // Perform some task
+   callback();
+ }
+
+ doSomething(function() {
+   console.log("Callback executed!");
+ });
+
+ // And more...
+
+ // This example covers many JavaScript structures, but there are more advanced concepts and libraries to explore based on your specific needs.
+
+</code>
+
+</pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
